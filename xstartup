@@ -1,0 +1,8 @@
+#!/bin/sh
+
+xhost +
+unsetenv SESSION_MANAGER
+unsetenv DBUS_SESSION_BUS_ADDRESS
+setenv VNCSESSION yes
+startxfce4 &
+vncconfig -nowin &
